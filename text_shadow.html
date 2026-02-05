@@ -1,0 +1,72 @@
+<html>
+<head>
+	<style>
+		#a
+		{
+			font-size:200px;
+			text-align:center;
+			color:gray;
+			line-height:150px;
+			text-shadow:15px 15px 5px black;
+		}
+		#b
+		{
+			font-size:200px;
+			text-align:center;
+			color:black;
+			line-height:150px;
+			text-shadow:-15px -15px 3px grey;
+		}
+		#c
+		{
+			font-size:200px;
+			text-align:center;
+			color:black;
+			line-height:150px;
+			text-shadow:5px 5px 3px aqua,9px 9px 2px blue,14px 14px 1px darkblue;
+		}
+		#d
+		{
+			font-size:200px;
+			text-align:center;
+			color:black;
+			<!-- line-height:150px; -->
+			<!-- text-shadow:5px 5px 3px green,9px 9px 2px blue,14px 14px 1px orange; -->
+		}
+		#d:hover
+		{
+			text-shadow:5px 5px 3px green,9px 9px 2px blue,14px 14px 1px orange;
+		}
+		#d1
+		{
+			font-size:50px;
+			text-align:center;
+		}
+		#e
+		{
+			font-size:200px;
+			text-align:center;
+			color:black;
+			<!-- line-height:150px; -->
+			<!-- text-shadow:5px 5px 3px green,9px 9px 2px blue,14px 14px 1px orange; -->
+			transition:all 4s;
+			<!-- to make transition when mouse leaves/move. -->
+		}
+		#e:hover
+		{
+			color:purple;
+			text-shadow:5px 5px 3px gray,9px 9px 2px blue,14px 14px 1px black;
+			transition:1s, 3s, 5s;
+
+		}
+	</style>
+</head>
+<body>
+<p id="a">VSC</p>
+<p id="b">VSC</p>
+<p id="c">VSC</p>
+<p id="d">VSC</p>
+<p id="d1">Effects will show when you move the mouse on the above text.</p>
+<<p id="e">VSC</p>
+</body>
+</html> 

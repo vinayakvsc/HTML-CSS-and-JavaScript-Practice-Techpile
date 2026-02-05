@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				height:450px;
+				width:970px;
+				background:rgba(0,5,20,.8);
+				box-sizing:border-box;
+				margin:0px auto;
+				border:5px groove blue;
+			}
+			.box
+			{
+				height:200px;
+				width:300px;
+				background:brown;
+				box-sizing:border-box;
+				margin:10px;
+				float:left;
+				border:5px groove blue;
+				box-shadow:5px 5px 3px 5px rgba(255,255,255,.5) inset,-5px -5px 3px 5px rgba(255,255,255,.5) inset;
+				transition:all 5s;
+			}
+			.box:hover
+			{
+				transform:rotate(360deg) scale(2);
+				transition:all 5s;
+			}
+			.box img
+			{
+				height:100%;
+				width:100%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div class="box">
+				<img src="images/bike6.jpg"/>
+			</div>
+			<div class="box">
+				<img src="images/bike7.jpg"/>
+			</div>
+			<div class="box">
+				<img src="images/bike10.jpg"/>
+			</div>
+			<div class="box">
+				<img src="images/bike11.jpg"/>
+			</div>
+			<div class="box">
+				<img src="images/bike4.jpg"/>
+			</div>
+			<div class="box">
+				<img src="images/bike9.jpg"/>
+			</div>
+		</div>
+	</body>
+</html>

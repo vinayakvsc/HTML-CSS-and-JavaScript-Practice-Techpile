@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				min-height:700px;
+				width:1000px;
+				margin:0px auto;
+			}
+			#menu
+			{
+				height:50px;
+				width:1000px;
+			}
+			#menul
+			{
+				height:50px;
+				width:300px;
+				background:red;
+				float:left;
+			}
+			#menur
+			{
+				height:50px;
+				width:700px;
+				background:orange;
+				float:left;
+			}
+			#slider
+			{
+				height:450px;
+				width:1000px;
+				background:url("images/bike1.jpg");
+				background-size:100% 100%;
+				border:1px solid transparent;
+				box-sizing:border-box;
+			}
+			#slide
+			{
+				height:300px;
+				width:450px;
+				background:transparent;
+				margin:50px 100px;
+				font-size:15px;
+				line-height:40px;
+			}
+			#trans
+			{
+				height:100%;
+				width:100%;
+				background:rgba(255,255,255,.2);
+
+			}
+			button
+			{
+				height:30px;
+				width:100px;
+				border:2px solid black;
+				border-radius:25px;
+				background:transparent;
+			}
+			#box
+			{
+				height:200px;
+				width:1000px;
+				padding:0px 40px;
+				box-sizing:border-box;
+			}
+			.boxes
+			{
+				height:250px;
+				width:200px;
+				margin:0px 15px;
+				float:left;
+				transform:translatey(-50px);
+				background:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="menu">
+				<div id="menul"></div>
+				<div id="menur"></div>
+			</div>
+			<div id="slider">
+				<div id="trans">
+					<div id="slide">
+						<span style="font-size:22px;">We are here to Create a</span><br/>
+						<span style="font-size:45px;">HTML Webpage</span><br/>
+						It is a page created using only HTML and CSS language.<br/>
+						<button>Learn More</button>
+					</div>
+				</div>
+			</div>
+			<div id="box">
+				<div class="boxes" style="background:rgba(20,30,40,1);"></div>
+				<div class="boxes"></div>
+				<div class="boxes"></div>
+				<div class="boxes"></div>
+			</div>
+		</div>
+	</body>
+</html>

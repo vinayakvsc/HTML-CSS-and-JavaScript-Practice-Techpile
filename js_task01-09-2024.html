@@ -1,0 +1,124 @@
+<!-- task: swap 30 images. -->
+<!-- using setInterval and setTimeout. -->
+<!-- Swapping of images. -->
+<html>
+	<head>
+		<style>
+			img
+			{
+				box-shadow:3px 3px 3px 3px red,-3px -3px 3px 3px red;
+				margin-left:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/cycle1.jpg" id="img1" height="300px" border="5px solid black"/>
+		<img src="images/cycle2.jpg" id="img2" height="300px" border="5px solid black"/>
+		<img src="images/cycle3.jpg" id="img3" height="300px" border="5px solid black"/>
+		<img src="images/cycle4.jpg" id="img4" height="300px" border="5px solid black"/>
+		<img src="images/cycle5.jpg" id="img5" height="300px" border="5px solid black"/><br/>
+		<img src="images/cycle6.jpg" id="img6" height="300px" border="5px solid black"/>
+		<img src="images/cycle7.jpg" id="img7" height="300px" border="5px solid black"/>
+		<img src="images/car1.jpg" id="img8" height="300px" border="5px solid black"/>
+		<img src="images/car2.jpg" id="img9" height="300px" border="5px solid black"/>
+		<img src="images/car3.jpg" id="img10" height="300px" border="5px solid black"/><br/>
+		<img src="images/car4.jpg" id="img11" height="300px" border="5px solid black"/>
+		<img src="images/car5.jpg" id="img12" height="300px" border="5px solid black"/>
+		<img src="images/car6.jpg" id="img13" height="300px" border="5px solid black"/>
+		<img src="images/car7.jpg" id="img14" height="300px" border="5px solid black"/>
+		<img src="images/car8.jpg" id="img15" height="300px" border="5px solid black"/><br/>
+		<img src="images/car9.jpg" id="img16" height="300px" border="5px solid black"/>
+		<img src="images/car10.jpg" id="img17" height="300px" border="5px solid black"/>
+		<img src="images/car11.jpg" id="img18" height="300px" border="5px solid black"/>
+		<img src="images/bike7.jpg" id="img19" height="300px" border="5px solid black"/>
+		<img src="images/bike1.jpg" id="img20" height="300px" border="5px solid black"/><br/>
+		<img src="images/bike2.jpg" id="img21" height="300px" border="5px solid black"/>
+		<img src="images/bike3.jpg" id="img22" height="300px" border="5px solid black"/>
+		<img src="images/bike4.jpg" id="img23" height="300px" border="5px solid black"/>
+		<img src="images/bike5.jpg" id="img24" height="300px" border="5px solid black"/>
+		<img src="images/bike6.jpg" id="img25" height="300px" border="5px solid black"/>
+		<!-- <button onclick="swap()">Swap Images</button> -->
+		<script>
+			function swap()
+			{
+				var a1=document.getElementById("img1")
+				var a2=document.getElementById("img2")
+				var a3=document.getElementById("img3")
+				var a4=document.getElementById("img4")
+				var a5=document.getElementById("img5")
+				var a6=document.getElementById("img6")
+				var a7=document.getElementById("img7")
+				var a8=document.getElementById("img8")
+				var a9=document.getElementById("img9")
+				var a10=document.getElementById("img10")
+				var a11=document.getElementById("img11")
+				var a12=document.getElementById("img12")
+				var a13=document.getElementById("img13")
+				var a14=document.getElementById("img14")
+				var a15=document.getElementById("img15")
+				var a16=document.getElementById("img16")
+				var a17=document.getElementById("img17")
+				var a18=document.getElementById("img18")
+				var a19=document.getElementById("img19")
+				var a20=document.getElementById("img20")
+				var a21=document.getElementById("img21")
+				var a22=document.getElementById("img22")
+				var a23=document.getElementById("img23")
+				var a24=document.getElementById("img24")
+				var a25=document.getElementById("img25")
+				var b1=a1.src
+				var b2=a2.src
+				var b3=a3.src
+				var b4=a4.src
+				var b5=a5.src
+				var b6=a6.src
+				var b7=a7.src
+				var b8=a8.src
+				var b9=a9.src
+				var b10=a10.src
+				var b11=a11.src
+				var b12=a12.src
+				var b13=a13.src
+				var b14=a14.src
+				var b15=a15.src
+				var b16=a16.src
+				var b17=a17.src
+				var b18=a18.src
+				var b19=a19.src
+				var b20=a20.src
+				var b21=a21.src
+				var b22=a22.src
+				var b23=a23.src
+				var b24=a24.src
+				var b25=a25.src
+		
+				a1.src=b2
+				a2.src=b3
+				a3.src=b4
+				a4.src=b5
+				a5.src=b6
+				a6.src=b7
+				a7.src=b8
+				a8.src=b9
+				a9.src=b10
+				a10.src=b11
+				a11.src=b12
+				a12.src=b13
+				a13.src=b14
+				a14.src=b15
+				a15.src=b16
+				a16.src=b17
+				a17.src=b18
+				a18.src=b19
+				a19.src=b20
+				a20.src=b21
+				a21.src=b22
+				a22.src=b23
+				a23.src=b24
+				a24.src=b25
+				a25.src=b1
+			}
+			window.setInterval(swap,1000)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Text-Shadow</title>
+<style>
+	#outer
+	{
+		height:400px;
+		width:600px;
+		background:url("images/123.jpg");
+		background-size:cover;
+		border:5px groove blue;
+	}
+	#inner
+	{
+		height:400px;
+		width:600px;
+		background:rgba(222,222,222,.4);
+		font-size:120px;
+		text-align:center;
+		line-height:400px;
+		
+		
+	}
+	#inner:hover
+	{
+		background:rgba(122,122,122,.2);
+		text-shadow:5px 5px 5px blue;
+	}
+	#outer1
+	{
+		height:400px;
+		width:600px;
+		background:url("images/123.jpg");
+		background-size:cover;
+		border:5px groove blue;
+	}
+	#inner1
+	{
+		height:400px;
+		width:600px;
+		background:rgba(222,222,222,.4);
+		font-size:120px;
+		text-align:center;
+		line-height:400px;
+		
+		
+	}
+	#inner1:hover
+	{
+		background:rgba(122,122,122,.2);
+		text-shadow:150px 120px 5px blue,-150px -120px 5px aqua,150px -120px 5px navy,-150px 120px 5px teal;
+	}
+</style>
+</head>
+<body>
+<div id="outer">
+	<div id="inner">VSC</div>
+</div>
+<hr size="10" color="brown"/>
+<div id="outer1">
+	<div id="inner1">VSC</div>
+</div>
+</body>
+</html>

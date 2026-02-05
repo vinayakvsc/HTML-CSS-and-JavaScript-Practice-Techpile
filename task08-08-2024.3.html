@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+	#main
+	{
+		height:500px;
+		width:800px;
+		background:#826afc;
+		font-size:15px;
+		margin:100px auto;
+	}
+	.half
+	{	
+		height:380px;
+		width:300px;
+		background:#826afc;
+		float:left;
+		margin:30px;
+		border:10px transparent;
+		padding:20px;
+		line-height:30px;
+	}
+	#text
+	{
+		height:160px;
+		width:240px;
+		margin:80px 30px;
+		font-size:40px;
+		line-height:55px;
+		padding:15px;
+		color:white;
+		border-left:5px solid white;
+		
+	}
+	.b
+	{
+		width:100%;
+	}
+	.c
+	{
+		width:100%;
+		background:#826afc;
+	}
+	#a
+	{
+		width:100%;
+		background:white;
+	}
+	.d
+	{
+		width:50%;
+	}
+</style>
+</head>
+<body>
+	<div id="main">
+		<div class="half">
+			<div id="text">Respponsive Registration Form</div>
+		</div>
+		<div class="half" style="background:white;">
+		<form>
+		<center style="font-size:30px;">Registration Form</center>
+		Full Name<br/>
+		<input class="b" type="text" placeholder="Enter Full Name"/><br/>
+		Email Address</br>
+		<Input class="b" type="email" placeholder="Enter Email Address"/>
+		<table>
+			<tr>
+				<td>Mobile Data</td>
+				<td>Birth Date</td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="Enter Mobile No."</td>
+				<td><input type="date"></td>
+			</tr>
+		</table>
+		Gender<br/>
+		<input type="radio" name="m"/>Male
+		<input type="radio" name="m"/>Female
+		<input type="radio" name="m"/>Prefer not to say
+		<br/>
+		Address
+		<input class="b" type="text" placeholder="Enter Address"/><br/>
+		<table>
+		<tr id="a"><td class="d">
+		<select>
+		<option selected>Country</option>
+		<option>India</option>
+		<option>China</option>
+		<option>Sri Lanka</option>
+		<option>Spain</option>
+		<option>Germany</option>
+		<option>USA</option>
+		</select></td>
+		<td class="d"><input type="text" placeholder="Enter postal code"/></td>
+		</tr>
+		</table>
+		<br/>
+		<input class="c" type="submit" value="Submit"/>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

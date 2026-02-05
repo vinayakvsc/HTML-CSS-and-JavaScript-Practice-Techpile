@@ -1,0 +1,264 @@
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				min-height:1000px;
+				width:1200px;
+				border:1px solid black;
+				margin:0px auto;
+			}
+			#header
+			{
+				height:80px;
+				width:1200px;
+			}
+			#menu 
+			{
+				height:45px;
+				width:1200px;
+				background:#17a43b;
+				border:1px solid transparent;
+				padding-left:120px;
+				box-sizing:border-box;
+			}
+			#menu ul
+			{
+				list-style:none;
+			}
+			#menu ul li
+			{
+				height:40px;
+				width:120px;
+				text-align:center;
+				line-height:40px;
+				float:left;
+				transform:translatey(-14px);
+				color:white;
+				font-weight:bold;
+				transition:all 1s;
+			}
+			#menu ul li:hover
+			{
+				background:#f8bb00;
+				color:rgba(0,0,0,.7);
+				border-radius:7px;
+				transition:all 1s;
+			}
+			#slider
+			{
+				height:450px;
+				width:1200px;
+				background:url("images/car5.jpg");
+				background-size:100% 100%;
+				background-attachment:fixed;
+			}
+			.h1
+			{
+				height:80px;
+				width:600px;
+				float:left;
+				box-sizing:border-box;
+				padding-top:2px;
+				padding-left:30px;
+			}
+			.h2
+			{
+				height:80px;
+				width:200px;
+				float:left;
+				padding-top:22px;
+				box-sizing:border-box;
+			}
+			.btn
+			{
+				background:#17a43b;
+				color:white;
+				padding:10px;
+				border-radius:3px;
+				text-decoration:none;<!--used to remove underline in the links.-->
+			}
+			#services
+			{
+				height:250px;
+				width:1200px;
+				padding:0px 150px;
+				box-sizing:border-box;
+			}
+			.s
+			{
+				height:250px;
+				width:300px;
+				float:left;
+				background:aqua;
+				transform:translatey(-50px);
+				text-align:center;
+				box-sizing:border-box;
+				padding:20px 10px;
+				color:white;
+				font-size:18px;
+			}
+			.qwe
+			{
+				font-size:25px;
+				font-weight:bold;
+			}
+			#intro
+			{
+				height:300px;
+				width:1200px;
+				padding:20px 50px;
+				text-align:justify;<!--to make text start and end from the border-line, meaning it doesn't leave space-->
+				box-sizing:border-box;
+			}
+			#UFooter
+			{
+				height:250px;
+				width:1200px;
+				background:rgba(25,20,30,1);
+			}
+			.footer
+			{
+				height:250px;
+				width:300px;
+				float:left;
+				font-size:18px;
+				line-height:18px;
+				padding-top:12px;
+				color:white;
+			}
+			#BFooter
+			{
+				height:50px;
+				width:1200px;
+				background:black;
+				color:white;
+				font-size:20px;
+				text-align:center;
+				padding-top:15px;
+				box-sizing:border-box;
+			}
+			.asd
+			{
+				color:orange;
+			}
+			#gallery
+			{
+				height:600px;
+				width:1200px;
+				animation-name:img;
+				animation-duration:12s;
+				animation-iterartion-count:infinite;
+				background:url("images/car8.jpg");
+				background-size:100% 100%;
+			}
+			#gallery:hover
+			{
+				animation-play-state:paused;
+			}
+			@keyframes img
+			{
+				0%
+				{
+					background:url("images/car8.jpg");
+					background-size:100% 100%;
+				}
+				20%
+				{
+					background:url("images/car2.jpg");
+					background-size:100% 100%;
+				}
+				40%
+				{
+					background:url("images/car3.jpg");
+					background-size:100% 100%;
+				}
+				60%
+				{
+					background:url("images/car10.jpg");
+					background-size:100% 100%;
+				}
+				80%
+				{
+					background:url("images/car6.jpg");
+					background-size:100% 100%;
+				}	
+				100%
+				{
+					background:url("images/car9.jpg");
+					background-size:100% 100%;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="header">
+				<div class="h1">
+					<img src="images/logo_website.png"/>
+				</div>
+				<div class="h2">
+					Contact Us <br/><b>+91-7007237006</b>
+				</div>
+				<div class="h2">
+					Mail Us<br/>techpilelko@gmail.com
+				</div>
+				<div class="h2">
+					<br/><a href="#" class="btn">Register Now</a>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<a href="#"><li>Home</li></a>
+					<a href="#"><li>About Us</li></a>
+					<a href="#"><li>Register</li></a>
+					<a href="#"><li>Contact Us</li></a>
+					<a href="#"><li>Gallery</li></a>
+					<a href="#"><li>Services</li></a>
+					<a href="#"><li>Login</li></a>
+				</ul>
+			</div>
+			<div id="slider"></div>
+			<div id="services">
+				<div class="s" style="background:#ff9601;"><span class="qwe">Apprenticeship(6 Month)</span><br/>
+Techpile offers you apprenticeship program with experienced consultants who would like to take a step with you towards your success and make you capable to work with a reputed organization.</div>
+				<div class="s" style="background:#2c96ea;"><span class="qwe">Summer Training(45-60 Days)</span><br/>
+Techpile offers you an appreciated training program with an objective to enhance the knowledge of the students on different cutting edge technologies for the B.Tech(CS/IT),BCA,MCA students.</div>
+				<div class="s" style="background:#efbc01;"><span class="qwe">Vocational Training(45-60 Days)</span><br/>
+Techpile offers an amazing Vocational Training program to make you expert in your field, which is a live project based training. Students related to the Diploma(CS/IT), PGDCA can join this program.</div>
+			</div>
+			<div id="intro">
+				<h1 align="center">About Us</h1>
+				Techpile Technology Private Limited, Established in 2018, stands as a pioneering force in the dynamic landscape of the IT sector.
+
+Techpile is founded by some young engineers who have mastered the IT sector with Objective to achieve the High Esteem Goals in the Sector across the Nation & Beyond.
+
+Techpile Technologies is an innovative organization specialized in both Software and Hardware Development and Training.
+
+Techpile has always been the best and most approved organisation for Summer & Industrial Training & Appreenticeship programs by Students of Entire region
+
+With commitment to excellence, we strive to push the boundaries of what is possible in the digital realm by delivering high-quality software, robust hardware solutions, and comprehensive training programs that propel our clients and trainees towards unprecedented success.
+			</div>
+			<div id="gallery"></div>
+			<div id="Contact Us"></div>
+			<div id="UFooter">
+				<div class="footer"></div>
+				<div class="footer"></div>
+				<div class="footer"></div>
+				<div class="footer">Contact Address
+								<br/><ul><li>	Plot No-43, Behind H.P Petrol <br/>Pump,
+									Tedhi Pulia Ring Rd, Sector 5,
+									Vikas Nagar, Lucknow,
+									Uttar Pradesh 226022</li>
+								<br/><li>	+91-7007237006</li>
+								<br/><li>	+91-9140444301</li>
+								<br/><li>	techpilelko@gmail.com</li></ul>
+				</div>
+			</div>
+			<div id="BFooter">
+				©2024 <span class="asd">Techpile Technology</span> 2024 | Developed By<span class="asd"> Techpile-Technical Cell</span>
+			</div>
+		</div>
+	</body>
+</html>

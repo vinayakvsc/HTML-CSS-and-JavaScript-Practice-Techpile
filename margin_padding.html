@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<title>Margin and Padding</title>
+		<style>
+			#outer
+			{
+				height:600px;
+				width:1200px;
+				font-size:25px;
+				border:8px groove navy;
+
+			}
+			#box1
+			{
+				height:550px;
+				width:350px;
+				font-size:25px;
+				padding:25px;
+				float:left;
+				background:aqua;
+			}
+			#box2
+			{
+				height:550px;
+				width:350px;
+				font-size:25px;
+				float:left;
+				background:lightblue;
+				margin:25px;
+			}
+			#box3
+			{
+				height:550px;
+				width:350px;
+				font-size:25px;
+				float:left;
+				background:blue;
+				border:25px groove violet;
+				color:gold;
+			}
+			#circle
+			{
+				height:280px;
+				width:280px;
+				border:10px solid green;
+				border-radius:50%;
+			
+			}
+			#circle1
+			{
+				height:240px;
+				width:240px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+			#circle2
+			{
+				height:200px;
+				width:200px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+			#circle3
+			{
+				height:160px;
+				width:160px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+			#circle4
+			{
+				height:120px;
+				width:120px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+			#circle5
+			{
+				height:80px;
+				width:80px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+			#circle6
+			{
+				height:40px;
+				width:40px;
+				margin:10px;
+				border:10px solid lightgreen;
+				border-radius:50%;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1><b><u>Margin and Padding.</u></b></h1></center>
+		<hr size="5" color="black"><hr size="5" color="black">
+		<div id="outer">
+			<div id="box1">
+				=>It is to show Padding(inner-spacing).<br/>
+				=>Meaning to leave space on the left, right, top and bottom.<br/>
+				=>It is done by using Padding.<br/>
+				=>Remember the height will increase as the there will be extra padding space.<br/>
+				=>So, remember to adjust the height and width of the box as to not increase its height and width more than 
+				 of its parents.<br/> 
+				=>Padding: top&bottom left&right;(if you give two values, the first value will be the space for the top
+				 and bottom and the second value will be the left and right space.).
+			</div>
+			<div id="box2">
+				=>It is to show Margin(outer-spacing.)
+			</div>
+			<div id="box3">
+				=>box-sizing:content-box;(by default)and we change it to<br/>
+				box-sizing:border-box;(It will adjust the box height and width.)
+				=>It is applicable only for padding and border.<br/>
+				=>>It automatically adjust the height and width of the box according to its parents.
+			</div>
+		</div>
+		<div id="circle">
+			<div id="circle1">
+				<div id="circle2">
+					<div id="circle3">
+						<div id="circle4">
+							<div id="circle5">
+								<div id="circle6"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

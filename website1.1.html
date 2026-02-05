@@ -1,0 +1,361 @@
+<html>
+	<head>
+		<style>
+			:root
+			{
+				--vsc:red;
+				--jai:blue;
+			}
+			#outer
+			{
+				min-height:1000px;
+				width:1200px;
+				border:1px solid black;
+				margin:0px auto;
+			}
+			#header
+			{
+				height:80px;
+				width:1200px;
+			}
+			#menu
+			{
+				height:45px;
+				width:1200px;
+				background:var(--vsc);
+				border:1px solid transparent;
+				padding-left:120px;
+				box-sizing:border-box;
+			}
+			#menu ul
+			{
+				list-style:none;
+			}
+			#menu ul li
+			{
+				height:40px;
+				width:120px;
+				text-align:center;
+				line-height:40px;
+				float:left;
+				transform:translatey(-14px);
+				color:white;
+				font-weight:bold;
+				transition:all 2s;
+			}
+			#menu ul li:hover
+			{
+				background:#f8bb00;
+				color:rgba(0,0,0,.8);
+				border-radius:5px;
+				transition:all .5s;
+			}
+			#slider
+			{
+				height:450px;
+				width:1200px;
+				background:url("images/car11.jpg");
+				background-attachment:fixed;
+				padding-top:100px;
+				background-size:cover;
+				animation-name:slider;
+				animation-duration:6s;
+				animation-iteration-count:infinite;
+				box-sizing:border-box;
+			}
+			.h1
+			{
+				height:80px;
+				width:600px;
+				float:left;
+				padding-top:8px;
+				box-sizing:border-box;
+				padding-left:100px;
+			}
+			.h2
+			{
+				height:80px;
+				width:200px;
+				float:left;
+				padding-top:22px;
+				box-sizing:border-box;
+			}
+			.btn
+			{
+				background:var(--jai);
+				color:white;
+				padding:10px;
+				border-radius:5px;
+				text-decoration:none;
+			}
+			#services
+			{
+				height:250px;
+				width:1200px;
+				padding:0px 150px;
+				box-sizing:border-box;
+			}
+			.s
+			{
+				height:250px;
+				width:300px;
+				float:left;
+				background:aqua;
+				transform:translatey(-70px);
+				text-align:center;
+				font-size:18px;
+				color:white;
+				padding:15px;
+				box-sizing:border-box;
+			}
+			.qwe
+			{
+				font-size:25px;
+			}
+			@keyframes slider
+			{
+				0%
+				{
+					background:url("images/car9.jpg");
+					background-size:cover;
+					background-attachment:fixed;
+				}
+				50%
+				{
+					background:url("images/car8.jpg");
+					background-size:cover;
+					background-attachment:fixed;	
+				}
+				100%
+				{
+					background:url("images/car3.jpg");
+					background-size:cover;
+					background-attachment:fixed;
+				}
+			}
+			#intro
+			{
+				background:#eceff7;
+				width:1200px;
+				padding:35px 25px;
+				box-sizing:border-box;
+				text-align:justify;
+			}
+			.heading
+			{
+				font-size:25px;
+				text-align:center;
+			}
+			#gallery
+			{
+				width:1200px;
+				background:linear-gradient(45deg,#ff9601,#efbc01);
+				padding:35px 150px;
+				box-sizing:border-box;
+			}
+			.row
+			{
+				height:200px;
+				width:900px;
+			}
+			.col
+			{
+				height:180px;
+				width:280px;
+				float:left;
+				border:2px solid white;
+				box-sizing:border-box;
+				margin:5px;
+				border-radius:5px;
+				padding:10px;
+				background:#f3f3f3;
+				box-shadoow:0px 0px 5px 2px black inset;
+			}
+			.col img
+			{
+				height:100%;
+				width:100%;
+			}
+			.col img:hover
+			{
+				transform:scale(1.5);
+			}
+			#contactus
+			{
+				height:500px;
+				width:1200px;
+				padding:20px 100px;
+				box-sizing:border-box;
+				background:#f3f3f3;
+			}
+			#contact
+			{
+				height:400px;
+				width:1000px;
+				box-sizing:border-box;
+			}
+			.half
+			{
+				height:400px;
+				width:500px;
+				box-sizing:border-box;
+				background:rgba(0,0,0,.1);
+				float:left;
+			}
+			#left
+			{
+				text-align:center;
+				padding:120px 0px;
+				color:#ff9601;
+				font-size:40px;
+			}
+			#right
+			{
+				padding:20px 0px;
+				font-size:18px;
+				line-height:40px;
+			}
+			::placeholder
+			{
+				padding-left:10px;
+			}
+			.input
+			{
+				width:90%;
+				height:30px;
+				border:none;
+				
+			}
+			#ufooter
+			{
+				height:300px;
+				width:1200px;
+				background:rgba(0,0,0,.8);
+			}
+			.box
+			{
+				height:300px;
+				width:300px;
+				float:left;
+			}
+			#bfooter
+			{
+				height:50px;
+				width:1200px;
+				background:rgba(0,0,0,.8);
+				border-top:2px solid black;
+				color:white;
+				font-size:20px;
+				text-align:center;
+				padding-top:15px;
+				box-sizing:border-box;
+			}
+			.asd
+			{
+				color:orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="header">
+				<div class="h1">
+					<img src="images/logo_website.png"/>
+				</div>
+				<div class="h2">
+					Contact Us <br/><b>+91-7007237006</b>
+				</div>
+				<div class="h2">
+					Mail Us<br/>techpilelko@gmail.com
+				</div>
+				<div class="h2">
+					<br/><a href="#" class="btn">Register Now</a>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<a href="#"><li>Home</li></a>
+					<a href="#intro"><li>About Us</li></a>
+					<a href="#"><li>Register</li></a>
+					<a href="#contactus"><li>Contact Us</li></a>
+					<a href="#gallery"><li>Gallery</li></a>
+					<a href="#"><li>Services</li></a>
+					<a href="#"><li>Login</li></a>
+				</ul>
+			</div>
+			<div id="slider">
+				<div style="text-align:center;font-size:60px;color:white;
+				text-shadow:3px 3px 2px black;">Wlcome to<b style="collor:var(--vsc);">Techpile Technology Pvt. Ltd.</b>
+				<br/><br/><a href="#" style="background:var(--vsc);font-size:22px;text-decoration:none;padding:10px;
+				color:white;border-radius:5px;">Register Now</a>
+				</div>
+			</div>
+			<div id="services">
+				<div class="s" style="background:#ff9601;"><span class="qwe">Apprenticeship(6 Month)</span><br/>
+Techpile offers you apprenticeship program with experienced consultants who would like to take a step with you towards your success and make you capable to work with a reputed organization.</div>
+				<div class="s" style="background:#2c96ea;"><span class="qwe">Summer Training(45-60 Days)</span><br/>
+Techpile offers you an appreciated training program with an objective to enhance the knowledge of the students on different cutting edge technologies for the B.Tech(CS/IT),BCA,MCA students.</div>
+				<div class="s" style="background:#efbc01;"><span class="qwe">Vocational Training(45-60 Days)</span><br/>
+Techpile offers an amazing Vocational Training program to make you expert in your field, which is a live project based training. Students related to the Diploma(CS/IT), PGDCA can join this program.</div>
+			</div>
+			<div id="intro">
+				<div class="heading">About <b style="color:#ff9601">Us</b></div>
+				Techpile Technology Private Limited, Established in 2018, stands as a pioneering force in the dynamic landscape of the IT sector.
+
+Techpile is founded by some young engineers who have mastered the IT sector with Objective to achieve the High Esteem Goals in the Sector across the Nation & Beyond.
+
+Techpile Technologies is an innovative organization specialized in both Software and Hardware Development and Training.
+
+Techpile has always been the best and most approved organisation for Summer & Industrial Training & Appreenticeship programs by Students of Entire region
+
+With commitment to excellence, we strive to push the boundaries of what is possible in the digital realm by delivering high-quality software, robust hardware solutions, and comprehensive training programs that propel our clients and trainees towards unprecedented success.
+			</div>
+			<div id="gallery">
+				<div class="heading">Images <b style="color:#17a43b">Gallery</b></div>
+				<div class="row">
+					<div class="col"><img src="images/cycle3.jpg"/></div>
+					<div class="col"><img src="images/cycle5.jpg"/></div>
+					<div class="col"><img src="images/cycle7.jpg"/></div>
+				</div>
+				<div class="row">
+					<div class="col"><img src="images/cycle2.jpg"/></div>
+					<div class="col"><img src="images/cycle4.jpg"/></div>
+					<div class="col"><img src="images/cycle6.jpg"/></div>
+				</div>
+			</div>
+			<div id="contactus" >
+				<div  class="heading">
+					<b style="color:#ff9601">Contact</b> With Us
+				</div>
+				<div id="contact">
+					<div class="half" id="left">Send Us Your <br/>Message</div>
+					<div class="half" id="right">
+						<form>
+							Your Name<br/>
+							<input class="input" type="text"  required placeholder="Enter Your Name" /><br/>
+							Your Contact<br/>
+							<input class="input" type="text" required placeholder="Enter Your Contact Number" /><br/>
+							Your Email<br/>
+							<input class="input" type="text" required placeholder="Enter Your Email" /><br/>
+							Your Message<br/>
+							<textarea style="border:none;" cols="62" rows="3" placeholder="Enter You Message"></textarea><br/>
+							<br/>
+							<center>
+								<button class="btn"  style="width:100px;">Send</button>
+							</center>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="ufooter">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div id="bfooter">
+				©2024 <span class="asd">Techpile Technology</span> 2024 | Developed By<span class="asd"> Techpile-Technical Cell</span>
+			</div>
+		</div>
+	</body>
+</html>

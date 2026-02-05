@@ -1,0 +1,22 @@
+<!--GetSet Value Property in Events. -->
+<html>
+	<head></head>
+	<body>
+		First Number:<br/>
+		<input type="text" id="a" /><br/>
+		Second Number:<br/>
+		<input type="text" id="b" /><br/>
+		Addition:<br/>
+		<input type="text" id="c" /><br/>
+		<button onclick="a1()">+</button>
+		<script>
+			function a1()
+			{
+				var a1=document.getElementById("a").value
+				var b1=document.getElementById("b").value
+				var add= parseFloat(a1)+parseFloat(b1)
+				document.getElementById("c").value="Sum is: "+add
+			}
+		</script>
+	</body>
+</html>

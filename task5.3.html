@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>task5.3</title>
+		<style>
+			#outer
+			{
+				height:655px;
+				width:605px;
+				border:3px solid black;
+				box-sizing:border-box;
+				margin:0px auto;
+			}
+			#header
+			{
+				height:50px;
+				width:600px;
+				background:rgba(75,24,45,1);
+				box-sizing:border-box;
+				line-height:50px;
+				color:white;
+				font-size:25px;
+				padding-left:15px;
+			}
+			#main
+			{
+				height:520px;
+				width:600px;
+				background:rgba(1,15,23,.8);
+				box-sizing:border-box;
+			}
+			#footer
+			{
+				height:80px;
+				width:600px;
+				background:rgba(75,24,45,.9);
+				box-sizing:border-box;
+				padding-left:420px;
+				padding-top:15px;
+			}
+			.btn
+			{
+				height:40px;
+				width:80px;
+				font-size:17px;
+				border-radius:8px;
+			}
+			.btn:hover
+			{
+				background:brown;
+			}
+			table
+			{
+				height:520px;
+				width:600px;
+				padding-left:10px;
+				font-size:20px;
+				color:white;
+			}
+			.align
+			{
+				text-align:right;
+				padding-right:20px;
+			}
+			.input
+			{
+				height:30px;
+				width:95%;
+				padding-left:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1><b><u>Form using HTML and CSS.</u></b></h1></center>
+		<hr size="5" color="black">
+		<div id="outer">
+			<div id="header">Sign Up</div>
+			<div id="main">
+				<table>
+					<tr>
+						<td class="align">First Name</td>
+						<td><input class="input" type="text" required autofocus placeholder="Enter You First Name"/> </td>
+					</tr>
+					<tr>
+						<td class="align">Last Name</td>
+						<td><input class="input" type="text" placeholder="Enter Your Last Name" /></td>
+					</tr>
+					<tr>
+						<td class="align">Screen Name</td>
+						<td><input class="input" type="text" placeholder="Enter Your Screen Name" /></td>
+					</tr>
+					<tr>
+						<td class="align">Date of Birth</td>
+						<td><input style="height:30px;" type="date"/></td><!--remember to ask how to create separate boxes for each day, month, and year.-->
+					</tr>
+					<tr>
+						<td class="align">Gender</td>
+						<td>
+							<input type="radio" value="gender" />Male
+							<input type="radio" value="gender" />Female
+						</td>
+					</tr>
+					<tr>
+						<td class="align" >Country</td>
+						<td>
+							<select  style="height:30px;">
+								<option selected>Country</option>
+								<option >India</option>
+								<option >Iran</option>
+								<option >USA</option>
+								<option >Germany</option>
+								<option >Spain</option>
+								<option >Russia</option>
+								<option >France</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="align">Email</td>
+						<td><input class="input" type="email" placeholder="Enter Your Email" /></td>
+					</tr>
+					<tr>
+						<td class="align">Phone</td>
+						<td><input class="input" type="phone" placeholder="Enter Your Phone No." /></td>
+					</tr>
+					<tr>
+						<td class="align">Password</td>
+						<td><input class="input" type="password" placeholder="Enter Your Password" /></td>
+					</tr>
+					<tr>
+						<td class="align">Confirm Password</td>
+						<td><input class="input" type="password" placeholder="Enter Your Password" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox"  />I agree to the Terms of Use.</td>
+					</tr>
+				</table>
+			</div>
+			<div id="footer">
+				<button class="btn">Submit</button>
+				<button class="btn">Cancel</button>
+			</div>
+		</div>
+	</body>
+</html>
