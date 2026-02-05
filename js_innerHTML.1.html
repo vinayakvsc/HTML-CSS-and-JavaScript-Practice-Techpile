@@ -1,0 +1,37 @@
+<!-- innerHTML -->
+<!-- To set tags too with the text , we use innerHTML -->
+
+<html>
+	<head></head>
+	<body>
+		<input id="a" type="text"/><i id="b"></i><br/><br/>
+		<button id="btn" onclick="v()">Click</button>
+		<script>
+		<!-- To show the border and the message in red when the text-box is empty-->
+<!-- To show the border and the message in green when we type something in the text-box -->
+			function v()
+			{
+				var x=document.getElementById("a")
+				var x1=document.getElementById("a").value
+				var y=document.getElementById("b")
+				var bt=document.getElementById("btn")
+				if(x1=="")
+				{
+					y.innerHTML=" Please type some value."
+					y.style.color="red"
+					x.style.border="2px solid red"
+					bt.style.backgroundColor="red"
+					bt.style.color="white"
+				}
+				else
+				{
+					y.innerHTML=" <b>Value is: </b>"+x1
+					y.style.color="green"
+					x.style.border="2px solid green"
+					bt.style.backgroundColor="green"
+					bt.style.color="white"
+				}
+			}
+		</script>
+	</body>
+</html>

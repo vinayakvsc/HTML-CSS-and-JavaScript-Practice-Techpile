@@ -1,0 +1,48 @@
+<!-- Task1: Make 4 buttons as +,-,*,/ and clicking on those button calculate the value. -->
+<!--GetSet Value Property in Events. -->
+<html>
+	<head></head>
+	<body>
+		First Number:<br/>
+		<input type="text" id="a" /><br/>
+		Second Number:<br/>
+		<input type="text" id="b" /><br/>
+		Addition:<br/>
+		<input type="text" id="c" /><br/>
+		<button onclick="a1()">+</button>
+		<button onclick="a2()">-</button>
+		<button onclick="a3()">*</button>
+		<button onclick="a4()">/</button>
+		<script>
+			function a1()
+			{
+				var a1=document.getElementById("a").value
+				var b1=document.getElementById("b").value
+				var add= parseFloat(a1)+parseFloat(b1)
+				document.getElementById("c").value="Sum is: "+add
+			}
+			function a2()
+			{
+				var a1=document.getElementById("a").value
+				var b1=document.getElementById("b").value
+				var subs= parseFloat(a1)-parseFloat(b1)
+				document.getElementById("c").value="Substraction is: "+subs
+			}
+			function a3()
+			{
+				var a1=document.getElementById("a").value
+				var b1=document.getElementById("b").value
+				var mul= parseFloat(a1)*parseFloat(b1)
+				document.getElementById("c").value="Multiplication is: "+mul
+			}
+			function a4()
+			{
+				var a1=document.getElementById("a").value
+				var b1=document.getElementById("b").value
+				var div= parseFloat(a1)/parseFloat(b1)
+				document.getElementById("c").value="Division is: "+div
+			}
+		</script>
+	</body>
+</html>
+

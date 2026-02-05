@@ -1,0 +1,142 @@
+<html>
+<heaad>
+	<title>div_tag5</title>
+	<style>
+		h1
+		{
+			font-size:45px;
+			text-align:center;
+			border:5px groove blue;
+			text-shadow:3px 3px 1px white, 6px 6px 3px navy;
+			width:300px;
+			box-shadow:3px 3px 2px red, 7px 7px 3px orange,10px 10px 5px purple;
+		}
+		#outer
+		{
+			height:300px;
+			width:300px;
+			background:gray;
+			border:25px groove red;
+		}
+		#left
+		{
+			height:300px;
+			width:120px;
+			background:orange;	
+			float:left;
+		}
+		#right
+		{
+			height:300px;
+			width:180px;
+			background:gold;
+			float:left;
+		}
+		#lefttop
+		{
+			height:120px;
+			width:120px;
+			background:olive;
+		}
+		#leftbottom
+		{
+			height:180px;
+			width:120px;
+			background:green;
+		}
+		#leftbottomleft
+		{
+			height:180px;
+			width:60px;
+			background:red;
+			float:left;
+		}
+		#leftbottomright
+		{
+			height:180px;
+			width:60px;
+			background:pink;
+			float:left;
+		}
+		#leftbottomlefttop
+		{
+			height:90px;
+			width:60px;
+			background:lightgreen;
+		}
+		#leftbottomleftbottom
+		{
+			height:90px;
+			width:60px;
+			background:teal;
+		}
+		#righttop
+		{
+			height:150px;
+			width:180px;
+			background:green;
+		}
+		#rightbottom
+		{
+			height:150px;
+			width:180px;
+			background:teal;
+		}
+		#righttopleft
+		{
+			height:150px;
+			width:60px;
+			background:orange;
+			float:left;
+		}
+		#righttopright
+		{
+			height:150px;
+			width:120px;
+			background:pink;
+			float:left;
+		}
+		#righttoprighttop
+		{
+			height:75px;
+			width:120px;
+			background:blue;
+		}
+		#righttoprightbottom
+		{
+			height:75px;
+			width:120px;
+			background:navy;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Using Div Tag.</h1>
+		<hr size="8px" color="maroon"></hr>
+		<div id="outer">
+			<div id="left">
+				<div id="lefttop"></div>
+				<div id="leftbottom">
+					<div id="leftbottomleft">
+						<div id="leftbottomlefttop"></div>
+						<div id="leftbottomleftbottom"></div>
+					</div>
+					<div id="leftbottomright"></div>
+				</div>
+			</div>
+			<div id="right">
+				<div id="righttop">
+					<div id="righttopleft"></div>
+					<div id="righttopright">
+						<div id="righttoprighttop"></div>
+						<div id="righttoprightbottom"></div>
+					</div>
+				</div>
+				<div id="rightbottom"></div>
+			</div>
+		</div>
+		
+	</center>
+</body>
+</html>

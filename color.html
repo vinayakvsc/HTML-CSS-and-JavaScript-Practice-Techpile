@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>transparent color</title>
+<style>
+	#outer
+	{
+		height:500px;
+		width:1000px;
+		background:url("images/g.jpeg");
+		Background-size:100% 100%;
+		margin:0px auto;
+		border:25px inset blue;
+		border-radius:25px;
+		font-size:150px;
+		color:white;
+		text-shadow:5px 5px 3px green,8px 8px 3px lightgreen;
+		text-align:center;
+		line-height:500px;<!--always equal to the height of the box.-->
+	}
+	#inner
+	{
+		height:500px;
+		width:1000px;
+		background:rgba(225,225,225,.2);<!--(red,green,blue,opacity amount)-->	
+	}
+	#inner:hover
+	{	
+		height:500px;
+		width:1000px;
+		background:rgba(212,156,123,.4);
+		text-shadow:5px 5px 3px red,8px 8px 3px orange;
+		
+	}
+</style>
+</head>
+<body>
+<center><h1><b><u>Layering a background image with another color.</u></b></h1></center>
+<hr size="5" color="black">
+<div id="outer">
+<div id="inner">VSC</div>
+</div>
+</body>
+</html>

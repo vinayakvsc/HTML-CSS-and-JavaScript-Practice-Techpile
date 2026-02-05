@@ -1,0 +1,52 @@
+<!-- Digital Clock -->
+<html>
+	<head>
+		<style>
+			body
+			{
+				background:black;
+				color:blue;
+				text-align:center;
+				font-size:100px;
+				font-family:digital-7;
+			}
+			#date
+			{
+				height:350px;
+				width:900px;
+				font-size:220px;
+				border:20px groove green;
+				margin:0px auto;
+				line-height:350px;
+				box-shadow:0px 0px 5px 10px rgba(1,72,247) inset, 0px 0px 10px 15px blue;
+				border-radius:40px;
+			}
+			#time
+			{
+				height:150px;
+				width:900px;
+				font-size:120px;
+				border:20px groove green;
+				margin:0px auto;
+				line-height:150px;
+				box-shadow:0px 0px 5px 10px rgba(1,72,247) inset, 0px 0px 10px 15px blue;
+				border-radius:40px;
+			}
+		</style>
+	</head>
+	<body>
+	Digital Clock
+		<div id="date">Time</div>
+		<div id="time">Time</div>
+		<script>
+			function date()
+			{
+				var d=new Date()
+				document.querySelector("#date").innerText=d.toLocaleTimeString()
+				document.querySelector("#time").innerText=d.toLocaleDateString()
+				
+			}
+			window.setInterval(date,1000)
+		</script>
+	</body>
+<html>

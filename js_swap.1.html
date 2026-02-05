@@ -1,0 +1,36 @@
+<!-- Swapping of two values -->
+<html>
+	<head>
+		<style>
+			h1
+			{
+				text-align:center;
+				color:blue;
+				font-size:40px;
+				text-shadow:4px 4px 2px navy,7px 7px 4px purple;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="a">Vinayak Singh Chauhan</h1>
+		<h1 id="b">Jai Singh Chauhan</h1>
+		<center>
+		<button onclick="swap()" >Swap</button>
+		</center>
+		<script>
+			function swap()
+			{
+				var x=document.getElementById("a")
+				var y=document.getElementById("b")
+				var v1=x.innerText
+				var v2=y.innerText
+				x.style.transform="rotate(360deg)"
+				y.style.transform="rotate(360deg)"
+				x.style.transition="3s"
+				y.style.transition="3s"
+				x.innerText=v2
+				y.innerText=v1
+			}
+		</script>
+	</body>
+</html>

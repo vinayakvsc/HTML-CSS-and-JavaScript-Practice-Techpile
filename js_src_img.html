@@ -1,0 +1,17 @@
+<!-- On clicking a button ,we have to get the address of the src. -->
+<html>
+	<head></head>
+	<body>
+		<img src="images/cycle5.jpg" id="img" height="500px"/><br/>
+		<button onclick="get()">Click It</button>
+		<p id="p"></p>
+		<script>
+			function get()
+			{
+				var i=document.getElementById("img").src
+				<!-- alert(i) -->
+				document.getElementById("p").innerText=i
+			}
+		</script>
+	</body>
+</html>

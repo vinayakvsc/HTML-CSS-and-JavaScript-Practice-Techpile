@@ -1,0 +1,147 @@
+<!-- Animation -->
+<html>
+	<head>
+		<style>
+			.outer
+			{
+				height:450px;
+				border:10px solid black;
+			}
+		
+			@keyframes jai
+			{
+				from
+				{
+					background:green;
+					color:black;
+				}
+				to
+				{
+					background:blue;
+					font-size:150px;
+					color:navy;
+					text-shadow:4px 4px 3px aqua,10px 10px 5px green;
+					box-shadow:4px 4px 3px 3px aqua inset,-4px -4px 3px 3px aqua inset,
+					10px 10px 5px 5px green inset,-10px -10px 5px 5px green inset;
+					transform:translatey(225px);
+					border:20px groove navy;
+					border-radius:25px;
+				}
+			}
+			#a
+			{
+				animation-name:jai;
+				animation-duration:5s;
+				animation-iteration-count:infinite;
+				text-align:center;
+				
+			}
+			@keyframes jai1
+			{
+				from
+				{
+					background:black;
+					color:black;
+				}
+				to
+				{
+					background:brown;
+					font-size:150px;
+					color:navy;
+					text-shadow:4px 4px 3px aqua,10px 10px 5px green;
+					box-shadow:4px 4px 3px 3px aqua inset,-4px -4px 3px 3px aqua inset,
+					10px 10px 5px 5px green inset,-10px -10px 5px 5px green inset;
+					transform:translatey(225px);
+					border:20px groove navy;
+					border-radius:25px;
+				}
+			}
+			#b
+			{
+				animation-name:jai1;
+				animation-duration:5s;
+				animation-direction:reverse;
+				animation-iteration-count:infinite;
+				text-align:center;
+				
+			}
+			@keyframes jai2
+			{
+				from
+				{
+					background:red;
+					color:black;
+				}
+				to
+				{
+					background:orange;
+					font-size:150px;
+					color:navy;
+					text-shadow:4px 4px 3px aqua,10px 10px 5px green;
+					box-shadow:4px 4px 3px 3px aqua inset,-4px -4px 3px 3px aqua inset,
+					10px 10px 5px 5px green inset,-10px -10px 5px 5px green inset;
+					transform:translatey(225px);
+					border:20px groove navy;
+					border-radius:25px;
+				}
+			}
+			#c
+			{
+				animation-name:jai2;
+				animation-duration:5s;
+				animation-direction:alternate;
+				animation-iteration-count:infinite;
+				text-align:center;
+				
+			}@keyframes jai3
+			{
+				from
+				{
+					background:green;
+					color:black;
+				}
+				to
+				{
+					background:blue;
+					font-size:150px;
+					color:navy;
+					text-shadow:4px 4px 3px aqua,10px 10px 5px green;
+					box-shadow:4px 4px 3px 3px aqua inset,-4px -4px 3px 3px aqua inset,
+					10px 10px 5px 5px green inset,-10px -10px 5px 5px green inset;
+					transform:translatey(225px);
+					border:20px groove navy;
+					border-radius:25px;
+				}
+			}
+			#d
+			{
+				animation-name:jai3;
+				animation-duration:5s;
+				animation-direction:alternate-reverse;
+				animation-iteration-count:infinite;
+				text-align:center;
+				
+			}
+			#d:hover
+			{
+				animation-play-state:paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<div id="a">VSC</div>
+		</div>
+			<hr size="8" color="brown"/>
+		<div class="outer">
+			<div id="b">VSC</div>
+		</div>
+		<div class="outer">
+			<div id="c">VSC</div>
+		</div>
+			<hr size="8" color="brown"/>
+		<div class="outer">
+			<div id="d">VSC</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- querySelector :It selects the first matching tag of CSS selectot.  -->
+<html>
+	<head></head>
+	<body>
+		<p>Paragraph1</p>
+		<p>Paragraph2</p>
+		<p>Paragraph3</p>
+		<b class="b">Bold Tag 1</b><br/>
+		<b class="b">Bold Tag 2</b><br/>
+		<b class="b">Bold Tag 3</b><br/>
+		<i id="i">Italic Tag</i><br/>
+		<!-- <button onclick=print()>Print</button> -->
+		<script>
+				var x=document.querySelector("p")
+				var y=document.querySelector(".b")
+				var z=document.querySelector("#i")
+				document.write("<br/><br/>"+x.innerText)
+				document.write(y.innerText)
+				document.write(z.innerText)
+		</script>
+	</body>
+</html>

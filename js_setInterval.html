@@ -1,0 +1,31 @@
+<!-- Swapping of two values -->
+<!-- And using "setInterval" to continuously call the function. -->
+<html>
+	<head>
+		<style>
+			h1
+			{
+				text-align:center;
+				color:aqua;
+				font-size:30px;
+				text-shadow:4px 4px 2px blue,7px 7px 4px navy;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="a">Vinayak Singh Chauhan</h1>
+		<h1 id="b">Jai Singh Chauhan</h1>
+		<script>
+			function swap()
+			{
+				var x=document.getElementById("a")
+				var y=document.getElementById("b")
+				var v1=x.innerText
+				var v2=y.innerText
+				x.innerText=v2
+				y.innerText=v1
+			}
+			window.setInterval(swap,2000)
+		</script>
+	</body>
+</html>

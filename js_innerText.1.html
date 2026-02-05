@@ -1,0 +1,27 @@
+<!-- Making a paragraph below each box containing each value. -->
+<html>
+	<head></head>
+	<body>
+		Name:<br/>
+		<input type="text" id="a"/><br/>
+		<p id="aa"></p><br/>
+		Mobile:<br/>
+		<input type="text" id="b"/><br/>
+		<p id="bb"></p><br/>
+		Message:<br/>
+		<input type="text" id="c"/><br/>
+		<p id="cc"></p><br/>
+		<button onclick="v()">Get Data</button>
+		<script>
+			function v()
+			{
+				var a1=document.getElementById("a").value
+				document.getElementById("aa").innerText=a1
+				var b1=document.getElementById("b").value
+				document.getElementById("bb").innerText=b1
+				var c1=document.getElementById("c").value
+				document.getElementById("cc").innerText=c1
+			}
+		</script>
+	</body>
+</html>

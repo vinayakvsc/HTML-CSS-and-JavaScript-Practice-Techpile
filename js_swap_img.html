@@ -1,0 +1,41 @@
+<!-- Swapping of images. -->
+<html>
+	<head>
+		<style>
+			img
+			{
+				box-shadow:3px 3px 3px 3px red,-3px -3px 3px 3px red;
+				margin-left:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/cycle1.jpg" id="img1" height="300px" border="5px solid black"/>
+		<img src="images/cycle2.jpg" id="img2" height="300px" border="5px solid black"/>
+		<img src="images/cycle3.jpg" id="img3" height="300px" border="5px solid black"/>
+		<img src="images/cycle4.jpg" id="img4" height="300px" border="5px solid black"/>
+		<img src="images/cycle5.jpg" id="img5" height="300px" border="5px solid black"/><br/>
+		<!-- <button onclick="swap()">Swap Images</button> -->
+		<script>
+			function swap()
+			{
+				var a1=document.getElementById("img1")
+				var a2=document.getElementById("img2")
+				var a3=document.getElementById("img3")
+				var a4=document.getElementById("img4")
+				var a5=document.getElementById("img5")
+				var b1=a1.src
+				var b2=a2.src
+				var b3=a3.src
+				var b4=a4.src
+				var b5=a5.src
+				a1.src=b2
+				a2.src=b3
+				a3.src=b4
+				a4.src=b5
+				a5.src=b1
+			}
+			window.setInterval(swap,1000)
+		</script>
+	</body>
+</html>

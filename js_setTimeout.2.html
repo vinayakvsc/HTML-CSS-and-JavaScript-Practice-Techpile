@@ -1,0 +1,32 @@
+<!-- Using setTimeout as setInterval. -->
+<html>
+	<head>
+		<style>
+			img
+			{
+				box-shadow:3px 3px 3px 3px red,-3px -3px 3px 3px red;
+				margin-left:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/cycle1.jpg" id="img1" height="300px" border="5px solid black"/>
+		<img src="images/cycle2.jpg" id="img2" height="300px" border="5px solid black"/><br/>
+		<button onclick="swap()">Swap</button>
+		<script>
+			function swap()
+			{
+				var a1=document.getElementById("img1")
+				var a2=document.getElementById("img2")
+				var b1=a1.src
+				var b2=a2.src
+				a1.src=b2
+				a2.src=b1
+				window.setTimeout(swap,1000)      //since, it is inside the function it will be called when the 
+												 //button is clicked and it will continuously called the function
+												//again and again.
+				
+			}
+		</script>
+	</body>
+</html>

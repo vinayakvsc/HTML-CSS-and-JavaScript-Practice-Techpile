@@ -1,0 +1,11 @@
+<!-- Task: To print the output of date in the format 05/Sep/2024 instead of 5/9/2024. -->
+<html>
+	<head></head>
+	<body>
+		<script>
+			var mon=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+			var a= new Date()
+			document.write(`Date: ${a.getDate()} / ${mon[a.getMonth()]} / ${a.getFullYear()} `)
+		</script>
+	</body>
+</html>

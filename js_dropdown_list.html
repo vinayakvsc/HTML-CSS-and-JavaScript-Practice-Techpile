@@ -1,0 +1,42 @@
+<!-- Dynamic Drop Down List -->
+<html>
+	<head></head>
+	<body>
+		<select></select>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<p></p>
+		<h3></h3>
+		<script>
+			var arr=["HTML","CSS","JS","Bootstrap","Python","Android"]
+			var item=""
+			for(var i in arr)
+			{
+				item+="<option>"+arr[i]+"</option>"
+			}
+			document.querySelector("select").innerHTML=item
+			
+			var arr=["HTML","CSS","JS","Bootstrap","Python","Android"]
+			var res="<select onchange='change()'>"
+			for(var i in arr)
+			{
+				res+="<option>"+arr[i]+"</option>"
+			}
+			res+="</select>"
+			document.querySelector("p").innerHTML=res
+			
+			function change()
+			{
+				var a=document.querySelector("select").value
+				document.querySelector("h3").innerHTML=`Selected value is: <b> ${a}</b>`
+			}
+		</script>
+	</body>
+</html>

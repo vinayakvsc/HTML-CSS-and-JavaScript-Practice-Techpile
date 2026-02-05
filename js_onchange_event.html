@@ -1,0 +1,22 @@
+<!-- onchange event -->
+<html>
+	<head></head>
+	<body>
+		<select onchange="change()">
+			<option>HTML</option>
+			<option>CSS</option>
+			<option>JS</option>
+			<option>JQUERY</option>
+			<option>BOOTSTRAP</option>
+			<option>PYTHON</option>
+		</select>
+		<p></p>
+		<script>
+			function change()
+			{
+				var x=document.querySelector("select").value
+				document.querySelector("p").innerHTML=`Selected value is:<b> ${x}</b>`
+			}
+		</script>
+	</body>
+</html>
